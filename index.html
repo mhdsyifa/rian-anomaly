@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The ꋪꀤꍏꈤ</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #121212;
+        color: #e0e0e0;
+        overflow-x: hidden;
+      }
+      .section {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        padding: 20px;
+        overflow-x: hidden;
+      }
+      .anomaly-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('img/bg.png') no-repeat center center fixed;
+        background-size: cover;
+        opacity: 0.5;
+        z-index: 0;
+        filter: grayscale(70%) contrast(0.8) brightness(0.5);
+        mix-blend-mode: screen;
+      }
+      h1,
+      h2 {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+      }
+      /* Glitch effect */
+      .glitch {
+        position: relative;
+        color: #e0e0e0;
+        font-weight: 700;
+      }
+      .glitch::before,
+      .glitch::after {
+        content: attr(data-text);
+        position: absolute;
+        left: 0;
+        right: 0;
+        opacity: 0.8;
+        clip: rect(0, 900px, 0, 0);
+      }
+      .glitch::before {
+        animation: glitchTop 1.5s infinite linear alternate-reverse;
+        color: #ff00c8;
+        z-index: 1;
+      }
+      .glitch::after {
+        animation: glitchBottom 1.5s infinite linear alternate-reverse;
+        color: #00fff9;
+        z-index: 2;
+      }
+      @keyframes glitchTop {
+        0% {
+          clip: rect(0, 9999px, 0, 0);
+          transform: translate(0);
+        }
+        10% {
+          clip: rect(0, 9999px, 15px, 0);
+          transform: translate(-2px, -2px);
+        }
+        20% {
+          clip: rect(0, 9999px, 0, 0);
+          transform: translate(0);
+        }
+        30% {
+          clip: rect(0, 9999px, 10px, 0);
+          transform: translate(2px, 2px);
+        }
+        40% {
+          clip: rect(0, 9999px, 0, 0);
+          transform: translate(0);
+        }
+        100% {
+          clip: rect(0, 9999px, 0, 0);
+          transform: translate(0);
+        }
+      }
+      @keyframes glitchBottom {
+        0% {
+          clip: rect(0, 9999px, 0, 0);
+          transform: translate(0);
+        }
+        10% {
+          clip: rect(10px, 9999px, 25px, 0);
+          transform: translate(2px, 2px);
+        }
+        20% {
+          clip: rect(0, 9999px, 0, 0);
+          transform: translate(0);
+        }
+        30% {
+          clip: rect(5px, 9999px, 20px, 0);
+          transform: translate(-2px, -2px);
+        }
+        40% {
+          clip: rect(0, 9999px, 0, 0);
+          transform: translate(0);
+        }
+        100% {
+          clip: rect(0, 9999px, 0, 0);
+          transform: translate(0);
+        }
+      }
+    </style>
+</head>
+<body>
+
+    <div class="section" id="introduction">
+        <div class="anomaly-bg"></div>
+        <div class="relative z-10 max-w-4xl px-4">
+            <h1 class="glitch text-4xl md:text-6xl" data-text="The Anomaly">ꋪꀤꍏꈤ</h1>
+            <p class="mt-4 text-lg md:text-xl">Level akhir dari series anomaly Italian Brainrot</p>
+        </div>
+    </div>
+
+    <div class="section" id="who-what">
+        <div class="anomaly-bg"></div>
+        <div class="relative z-10 max-w-4xl px-4">
+            <h2 class="text-3xl md:text-5xl">Apa dan siapa sebenarnya ꋪꀤꍏꈤ</h2>
+            <p class="mt-4 text-lg md:text-xl">Siapkan kitab suci kalian untuk berjaga jaga,<br> bahkan konon katanya siapa saja yang mempelajari fenomena anomali unik ini akan merasakan delusi yang sangat luar biasa.</p>
+        </div>
+    </div>
+
+    <div class="section" id="anomaly-explanation">
+        <div class="anomaly-bg"></div>
+        <div class="relative z-10 flex flex-col md:flex-row items-center max-w-6xl mx-auto px-4 gap-10">
+            <!-- Text Content -->
+            <div class="md:w-1/2 text-left">
+                <h2 class="text-3xl md:text-5xl mb-6">Penjelasan Anomali <br> ꋪꀤꍏꈤ</h2>
+                <p class="mb-4 text-lg leading-relaxed">
+                    ꋪꀤꍏꈤ adalah sebuah bentuk anomali linguistik yang tak dapat dijelaskan secara ilmiah.
+                    Bahasa ini dikenal sebagai bahaya tak terdefinisi, karena struktur kosakatanya sering terbalik,
+                    kabur, atau berubah-ubah secara acak. Tidak ada pola tetap—apa yang dibaca hari ini bisa berbeda esok hari.
+                </p>
+                <p class="mb-4 text-lg leading-relaxed">
+                    Hanya segelintir orang di dunia yang mengklaim mampu memahami bahasa ꋪꀤꍏꈤ. Namun, kemampuan itu bukanlah anugerah.
+                    Konon, siapa pun yang berhasil mengartikan makna sebenarnya dari ꋪꀤꍏꈤ akan mengalami delusi ekstrem, halusinasi,
+                    hingga kehilangan batas antara realitas dan ilusi. Beberapa laporan menyebutkan individu-individu tersebut
+                    berbicara dalam kata-kata yang tak dikenal, namun memengaruhi emosi orang di sekitarnya—menimbulkan rasa takut,
+                    sedih, atau bahkan rasa ingin bunuh diri.
+                </p>
+                <p class="mb-6 text-lg leading-relaxed">
+                    Bahasa ꋪꀤꍏꈤ tidak berasal dari akar bahasa mana pun yang dikenal umat manusia. Ada teori bahwa ini bukan
+                    bahasa manusia sama sekali, melainkan gema dari sesuatu yang seharusnya tidak dipahami.
+                </p>
+                <div class="bg-gray-900 bg-opacity-40 p-4 rounded-lg text-left max-w-md mx-auto md:mx-0">
+                    <h3 class="text-xl font-semibold mb-3 border-b border-pink-600 pb-1">Detail Entitas</h3>
+                    <ul class="space-y-2 text-lg leading-relaxed">
+                        <li><strong>ENTITAS:</strong> ꋪꀤꍏꈤ</li>
+                        <li><strong>Kelas Anomali:</strong> Bahaya Linguistik / Non-Fisik</li>
+                        <li><strong>Tingkat Ancaman:</strong> Tak Terdefinisi</li>
+                        <li><strong>Status:</strong> Tidak dapat dimusnahkan</li>
+                        <li><strong>Sumber:</strong> Tidak diketahui (dugaan berasal dari dimensi linguistik non-manusia)</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Image Content -->
+            <div class="md:w-1/2 flex justify-center">
+                <img
+                  src="img/main.jpg"
+                  alt="Anomaly Visual Representation"
+                  class="rounded-lg shadow-lg max-w-full max-h-96 object-cover"
+                />
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="traits">
+        <div class="anomaly-bg"></div>
+        <div class="relative z-10 max-w-4xl px-4">
+            <h2 class="text-3xl md:text-5xl">Dimana sesosok ini sekarang berada?</h2>
+            <p class="mt-4 text-lg">Beberapa peneliti menemukan koordinat lokasi anomali ini berada di sebuah desa dikecamatan kecil, mereka melihat sesosok ꋪꀤꍏꈤ pada saat itu sedang menabrakkan Mobil Rush GR Sport M/T ke Buis sumur yang sedang terparkir di bahu jalan</p>
+        </div>
+    </div>
+
+
+    <div class="section" id="translated-languages">
+    <div class="anomaly-bg"></div>
+    <div class="relative z-10 max-w-5xl px-4">
+        <h2 class="text-3xl md:text-5xl mb-6">Beberapa Bahasa yang Berhasil Diterjemahkan</h2>
+        <div class="overflow-x-auto">
+            <table class="min-w-full bg-gray-900 bg-opacity-50 rounded-lg text-left">
+                <thead>
+                    <tr>
+                        <th class="py-3 px-6 text-pink-400 font-semibold border-b border-gray-700">Bahasa ꋪꀤꍏꈤ</th>
+                        <th class="py-3 px-6 text-pink-400 font-semibold border-b border-gray-700">Terjemahan Bahasa Indonesia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b border-gray-700">
+                        <td class="py-4 px-6 font-mono text-lg text-cyan-300">tadi aku mau bilang aku dompet naruh lupa</td>
+                        <td class="py-4 px-6 text-lg">Bahaya tak terdefinisi yang mengancam</td>
+                    </tr>
+                    <tr class="border-b border-gray-700">
+                        <td class="py-4 px-6 font-mono text-lg text-cyan-300">aku sebenarnya punya naga (sambil mengelus ngelus makhluk misterius) </td>
+                        <td class="py-4 px-6 text-lg">kekuatan ini lebih besar daripada yang kalian kira</td>
+                    </tr>
+                    <tr class="border-b border-gray-700">
+                        <td class="py-4 px-6 font-mono text-lg text-cyan-300">siapa namamu? (terkadang sosok ꋪꀤꍏꈤ lupa kepada siapa dia berbicara) </td>
+                        <td class="py-4 px-6 text-lg">kamu adalah targetku berikutnya</td>
+                    </tr>
+                    <!-- Tambahkan baris lebih lanjut di sini -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="section" id="rian-appearances">
+  <div class="anomaly-bg"></div>
+  <div class="relative z-10 max-w-5xl px-4 py-10">
+    <h2 class="text-3xl md:text-5xl mb-6 text-center">Beberapa Penampakan Wujud Asli</h2>
+    <div class="relative overflow-hidden">
+      <div id="carousel" class="flex transition-transform duration-500 ease-in-out space-x-6">
+        <!-- Slide 1 -->
+        <div class="min-w-[280px] bg-gray-900 bg-opacity-60 rounded-lg p-6 shadow-lg flex-shrink-0">
+          <img src="img/penampakan-1.jpg" alt="Penampakan 1" class="rounded mb-4 w-full h-60 object-cover shadow-md" />
+          <h3 class="text-xl font-semibold mb-2">ꋪꀤꍏꈤ with another anomaly</h3>
+          <p class="text-gray-300 text-sm">Siapakah sosok musang yang ada disebelahnya? <br> Apakah anomali lain? Dengan kata lain, sesosok ꋪꀤꍏꈤ bisa menciptakan <br> anomali di atas anomali.</p>
+        </div>
+        <!-- Slide 2 -->
+        <div class="min-w-[280px] bg-gray-900 bg-opacity-60 rounded-lg p-6 shadow-lg flex-shrink-0">
+          <img src="img/penampakan-2.jpg" alt="Penampakan 2" class="rounded mb-4 w-full h-60 object-cover shadow-md" />
+          <h3 class="text-xl font-semibold mb-2">Lorem, ipsum.</h3>
+          <p class="text-gray-300 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quia!</p>
+        </div>
+        <!-- Slide 3 -->
+        <div class="min-w-[280px] bg-gray-900 bg-opacity-60 rounded-lg p-6 shadow-lg flex-shrink-0">
+          <img src="img/penampakan-3.jpg" alt="Penampakan 3" class="rounded mb-4 w-full h-60 object-cover shadow-md" />
+          <h3 class="text-xl font-semibold mb-2">Lorem, ipsum dolor.</h3>
+          <p class="text-gray-300 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, adipisci?</p>
+        </div>
+        <!-- Tambahkan slide lain di sini -->
+      </div>
+    </div>
+    <div id="carousel-dots" class="flex justify-center mt-6 space-x-3">
+      <!-- Dots will be generated by script -->
+    </div>
+  </div>
+</div>
+<div class="section" id="researchers">
+        <div class="anomaly-bg"></div>
+        <div class="relative z-10 max-w-4xl px-4 flex flex-col items-center text-center">
+            <h2 class="text-3xl md:text-5xl mb-6">Para Peneliti</h2>
+            <blockquote class="italic text-xl md:text-2xl max-w-3xl leading-relaxed border-l-4 border-pink-600 pl-6">
+                “Yang satu ini bukan cuma suara… dia adalah kata-kata yang tidak boleh pernah dimengerti. Bahasa yang tidak dibuat untuk kita.
+                Tapi setiap kali kamu coba pahami—dia makin nyata.”
+                <br /><br />
+                <span class="font-semibold">— Catatan terakhir Peneliti L-17 sebelum menghilang</span>
+            </blockquote>
+        </div>
+    </div>
+    <script>
+        //carousell
+          (function () {
+    const carousel = document.getElementById("carousel");
+    const dotsContainer = document.getElementById("carousel-dots");
+    const slides = carousel.children;
+    const totalSlides = slides.length;
+    let currentIndex = 0;
+    // Create dots
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.createElement("button");
+      dot.className =
+        "w-3 h-3 rounded-full bg-gray-600 hover:bg-pink-600 transition-colors";
+      dot.setAttribute("aria-label", "Slide " + (i + 1));
+      dot.addEventListener("click", () => goToSlide(i));
+      dotsContainer.appendChild(dot);
+    }
+    const dots = dotsContainer.children;
+    dots[0].classList.add("bg-pink-600");
+    function updateCarousel() {
+        const slideWidth = slides[0].offsetWidth + 24; // width + space-x-6 (24px)
+      carousel.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+      Array.from(dots).forEach((dot, i) => {
+        if (i === currentIndex) {
+          dot.classList.add("bg-pink-600");
+          dot.classList.remove("bg-gray-600");
+        } else {
+          dot.classList.add("bg-gray-600");
+          dot.classList.remove("bg-pink-600");
+        }
+      });
+    }
+    function goToSlide(index) {
+      currentIndex = index;
+      updateCarousel();
+    }
+    // Optional: Auto-play with pause on hover
+    let autoPlayInterval = setInterval(() => {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateCarousel();
+    }, 5000);
+    carousel.parentElement.addEventListener("mouseenter", () => {
+      clearInterval(autoPlayInterval);
+    });
+    carousel.parentElement.addEventListener("mouseleave", () => {
+      autoPlayInterval = setInterval(() => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateCarousel();
+      }, 5000);
+    });
+  })();
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document
+            .querySelector(this.getAttribute("href"))
+            .scrollIntoView({
+              behavior: "smooth",
+            });
+        });
+      });
+      
+    </script>
+</body>
+</html>
+
